@@ -1,0 +1,65 @@
+
+table
+{
+    border-collapse: collapse; /* Les bordures du tableau seront collées (plus joli) */
+}
+td
+{
+    border: 1px solid black;
+}
+.centre
+{
+
+	text-align: center;
+}
+
+body
+{
+background-color: silver; /* Le fond de la page sera noir */
+color: black; /* Le texte de la page sera blanc */
+}
+ table
+ {
+ 	background-color: white;
+ }
+
+ a:hover /* Apparence au survol des liens */
+{
+color: rgb(255, 0, 128);
+}
+tr:nth-child(odd)
+
+{
+	background-color: rgb(0, 119, 128);
+}
+
+td:hover
+{
+	background-color: yellow;
+}
+tr:hover
+{
+	background-color: rgb(0, 140, 255);
+}
+a {
+  background-image : url('tadexlogo113.png');
+}
+
+img:hover
+	
+{
+transform : scale(10);
+
+}
+.milieu
+{
+
+	text-align: center;
+}
+
+img
+	
+{
+
+transition: 0.3s;
+}
