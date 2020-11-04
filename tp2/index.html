@@ -8,26 +8,63 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        
         <!-- Place favicon.ico in the root directory -->
+        <link rel ="stylesheet"   href="index.css"  >
 
+        <script type="text/javascript" src="formulaire.js"></script>
+       
         <style>
           body{
-              background-color: #e9ebee;              
+              background-color: #f8f8f4;              
               font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
               font-size: 16px;
               margin: 0 auto;
-              max-width: 800px;              
+              max-width: 800px;   
+                      
+          }
+          label{
+            display: inline-block;   
+            min-width: 200px;
           }
         </style>
         
         <!-- Code à dé-commenter si besoin de fichier CSS ou JS -->
-        <!--<link rel="stylesheet" href="style.css">-->
-        <!--<script src="js/main.js"></script>-->
+        <!--<link rel="stylesheet" href="index.css">-->
+        <script src="js/main.js"></script>
     </head>
     <body>        
         <h1>tp2</h1>
+        <h2>Saisi d'une fiche "Personne"</h2>
+        <form id="FormId" onsubmit ="validation">
+            <div>
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="user_name" minlength="5" maxlength="20"><br><br>
+            </div>
+            <div>
+                <label for="prenom">Prenom :</label>
+                <input type="text" id="prenom" name="user_prenome" minlength="5" maxlength="20"><br><br>
+            </div>
+            <label for="naissance"> Date de naissance</label>
+                <input id=naisssance naissance="nom" type="txt" placeholder="JJ/MM/AAAA"> <br><br>
+            <div>
+                <label for="Adresse">Adresse</label>
+                <input  name ="Adresse" type="txt"   minlength="5" maxlength="50"  > <br><br>
+            </div>
+            <div>
+                <label for="mail">Email</label>
+                <input  name ="mail" type="email"   minlength="5" maxlength="50"  > <br><br>
+               
+                <input type="submit" value="valider" id="bouton" onclick="validation">
+       
+         </form>
+         <!--input type="button" value="Valider" onclick="validation()"/-->
+<div id="error"> </div>
+<div id="resultat"> </div>
+        </form>
+
+  
         <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
-        <img src="../galilee.png" alt="Logo Galilee"/>
+        <img width="65" src="index.jpg" alt="logo"/> 
     </body>
 </html>
