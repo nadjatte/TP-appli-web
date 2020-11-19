@@ -1,15 +1,15 @@
 <p align="center">
-  <a href="https://master3ir2020.slack.com/messages/aw">
+  <a href="https://3ir2019.slack.com">
      <img src="https://github.com/bilelz/tpaw/blob/master/galilee.png?raw=true" alt="Logo Master" width=100/>
   </a>  
   <br/>
-  Master 3IR² | <a href="https://master3ir2020.slack.com/messages/aw">master3ir2020.slack.com</a>
+  Master 3IR² | <a href="https://3ir2019.slack.com/messages/aw">3ir2019.slack.com</a>
 <h3 align="center">TP AW #3 : Bootstrap & jQuery</h3>
 </p>
 
 ### Prérequis (⚠️ important)
 
-* Lire **tout** l'énoncé  avant de commencer le TP.
+* Lire **tout** l'énnoncé avant de commencer le TP.
 
 ❓❓Si vous avez des questions ou des erreurs dans votre code : 
 * formater (indenter) bien votre code (raccourci Visual Studio Code : Ctrl + K puis Ctrl + F)
@@ -48,7 +48,7 @@ Le formulaire permettra de saisir les informations suivantes :
 * Adresse postale
 * Adresse mail
 
-![Texte alternatif](image1.png "texte pour le titre, facultatif")   
+![Texte alternatif](https://raw.githubusercontent.com/bilelz/tpaw/master/tp3/image1.png "texte pour le titre, facultatif")   
 
 
 ## 2. Plateforme de dév
@@ -136,10 +136,10 @@ $( document ).ready(function() {
 |valeur d’un champ                | document.querySelector("#name").value;              | $("#name").val()                             |
 |Modifier de contenu HTML         | document.querySelector(".modal-body").innerHTML = '\<img src="map.jpg"/\>'   | $(".modal-body").html('\<img src="map.jpg"/\>'); | 
 |Modifier de contenu textuelle    | document.querySelector(".modal-title").textContent = "Chaine de caractère" | $(".modal-title").text("Chaine de caractère"); | 
-| ajouter un "listener" à un élément | document.querySelector("#submit").addEventListener("click", function(event){<br/> &nbsp;&nbsp;event.preventDefault(); <br/>&nbsp;&nbsp;console.log( "click" ); <br/>});  |  $("#submit").on("click",function(event){ <br/>&nbsp;&nbsp;event.preventDefault(); <br/>&nbsp;&nbsp;console.log( "click" ); <br/>});  |
+| ajouter un "listener" à un élément | document.querySelector("#submit").addEventListener(function(event){<br/> &nbsp;&nbsp;event.preventDefault(); <br/>&nbsp;&nbsp;console.log( "click" ); <br/>}  |  $("#submit").on("click",function(event){ <br/>&nbsp;&nbsp;event.preventDefault(); <br/>&nbsp;&nbsp;console.log( "click" ); <br/>}  |
 
 ## 5. Affichage d'une popup (modal)
-![Texte alternatif](image4.png "texte pour le titre, facultatif")   
+![Texte alternatif](https://raw.githubusercontent.com/bilelz/tpaw/master/tp3/image4.png "texte pour le titre, facultatif")   
 Modal quand un champ est vide
 
    1. Ajouter ce code HTML à la fin de votre page HTML (avant la balise \</body\>)
@@ -172,7 +172,7 @@ Modal quand un champ est vide
    $('#myModal').modal("show");
 ```
 
-![Texte alternatif](image3.png "texte pour le titre, facultatif")   
+![Texte alternatif](https://raw.githubusercontent.com/bilelz/tpaw/master/tp3/image3.png "texte pour le titre, facultatif")   
 Modal quand tous les champs sont OK
 
    3. Pour l'image voir documentation vers Google Static Maps API https://developers.google.com/maps/documentation/static-maps/
@@ -181,7 +181,7 @@ Modal quand tous les champs sont OK
 
 ## 6. Ajout d’un calendrier jQueryUI
 
-![Texte alternatif](image2.png "texte pour le titre, facultatif")   
+![Texte alternatif](https://raw.githubusercontent.com/bilelz/tpaw/master/tp3/image2.png "texte pour le titre, facultatif")   
    1. Mettre en place le  plug-in Datepicker de JqueryUI disponible ici : http://jqueryui.com/datepicker/
       * Options disponibles pour ce plugin http://api.jqueryui.com/datepicker/
   
